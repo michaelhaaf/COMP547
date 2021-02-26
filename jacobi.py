@@ -5,8 +5,8 @@ import sys
 # Output: (a / b), the Jacobi symbol of a w.r.t. b
 def jacobi(a, b):
 
-	print("\nJacobi({}, {})".format(a, b))
-	if a <= 1:
+	print("Jacobi({}, {})".format(a, b))
+	if a == 1 or a == 0:
 		print(" = {}".format(a))
 		return a
 
@@ -31,4 +31,4 @@ def jacobi(a, b):
 
 a = int(sys.argv[1])
 b = int(sys.argv[2])
-print("\nJacobi({},{}) = {}".format(a, b, jacobi(a,b)))
+print("\nJacobi({}, {}) = {}".format(a, b, jacobi(a,b)))
